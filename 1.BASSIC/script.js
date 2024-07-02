@@ -1,10 +1,10 @@
-// const student= {
-//     fullname:"ANIL kumar",
-//     age:24,
-//     cgpa:8.5,
-// };
-// console.log(student["age"]);
-// console.log(student["fullname"]);
+const student= {
+    fullname:"ANIL kumar",
+    age:24,
+    cgpa:8.5,
+};
+console.log(student["age"]);
+console.log(student["fullname"]);
 
 const product ={
     productName:"pen",
