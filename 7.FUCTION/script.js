@@ -17,9 +17,28 @@
 
 // 2nd method
 
-let arr = [2, 4, 6, 8, 10];
+// let arr = [2, 4, 6, 8, 10];
 
-let calculatesquare = (value) => {
-  console.log(value * value);
-};
-arr.forEach(calculatesquare);
+// let calculatesquare = (value) => {
+//   console.log(value * value);
+// };
+// arr.forEach(calculatesquare);
+
+// Map methods
+
+// let arr = [5,6,7,8,9,10];
+
+//  let newArr=arr.map((value)=>{
+//    return value;
+// })
+// console.log(newArr);
+
+// filter
+let arr=[102,23,45,69,70];
+
+    let evenArray=arr.filter((value)=>
+    {
+        return value%2 === 0;
+
+    })
+    console.log(evenArray);
