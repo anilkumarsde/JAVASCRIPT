@@ -82,7 +82,7 @@ for(let i=1;i<=n;i++)
 console.log(arr9)
 
    const Tsum= arr9.reduce((pre,curr)=>
-    {
+    {cls
         return pre+curr;
     })
     console.log(`sum of 1 to ${n} = ${Tsum}`)
@@ -92,3 +92,5 @@ console.log(arr9)
         return pre*curr;
     })
     console.log(`product of 1 to ${n} = ${product}`);
+
+
