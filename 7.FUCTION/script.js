@@ -82,29 +82,29 @@ let student = [
   { id: 3, name: "Pawan", age: 16 },
   { id: 4, name: "Subhakar", age: 18 },
 ];
-// student.map((val)=>{
-//   console.log('id: ',val.id);
-//   console.log('Name: ',val.name);
-//   console.log('age: ',val.age)
-// })
-// let newArr=student.filter((val)=>{
-//   return val.age>12;
-// })
-// newArr.map((val)=>{
-//       console.log('id:',val.id)
-//       console.log('name ',val.name)
-//       console.log('age  ',val.age)
-// })
+student.map((val)=>{
+  console.log('id: ',val.id);
+  console.log('Name: ',val.name);
+  console.log('age: ',val.age)
+})
+let newArr=student.filter((val)=>{
+  return val.age>12;
+})
+newArr.map((val)=>{
+      console.log('id:',val.id)
+      console.log('name ',val.name)
+      console.log('age  ',val.age)
+})
 
-// filter method
-// let arr=[10,20,105,55,14,25];
-// let newArr=arr.filter((val)=>{
-//   return val%2===0;
-// })
+filter method
+let arr=[10,20,105,55,14,25];
+let newArr=arr.filter((val)=>{
+  return val%2===0;
+})
 
-// newArr.map((val)=>{
-//   console.log(val);
-// })
+newArr.map((val)=>{
+  console.log(val);
+})
 
 let arr = [10, 23, 45, 66];
 const result = arr.reduce((pre, curent) => {
