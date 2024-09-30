@@ -14,5 +14,15 @@ let fruit=['Apple','Banana','Mango','Kiwi'];
 // console.log(fruit3)
 // console.log(fruit4)
 // console.log(fruit5)
-let [fruit1,...fruitX]=fruit;  // rest operator
-console.log(fruitX)
+// let [fruit1,...fruitX]=fruit;  // rest operator
+// console.log(fruitX)
+
+let user={
+    sname:'Anil',
+    age:23,
+    mobile:9999999,
+    email:'anil@gmail.com'
+}
+let {sname,email,age}=user;
+console.log(sname)
+console.log(age)
