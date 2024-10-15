@@ -31,21 +31,47 @@
 // karanArjun3.__proto__=employee;
 // karanArjun4.__proto__=employee;
 
-class Toyota{
-  start(){
-    console.log('Start');
+// class Toyota{
+//   constructor(brand){
+//     console.log('creating new object')
+//     this.brand=brand;
+//     console.log(brand)
+
+//   }
+//   start(){
+//     console.log('Start');
+//   }
+//   stop(){
+//     console.log('Stop');
+//   }
+//   setBrand(brand){
+//     this.brandeName=brand;//this means object name
+//   }
+// }
+// let Car1=new Toyota();
+// let fortuner=new Toyota('fortuner');
+// let lexus=new Toyota('lexus');
+// fortuner.setBrand("fortuner");
+// Car1.setBrand('tata')
+
+// class Parent{
+//   myfun1(){
+//     console.log('Hi,Everyone');
+//   }
+// }
+// class Child extends Parent{}
+// let obj=new Child; 
+class Person {
+  eat() {
+    console.log("eat");
   }
-  stop(){
-    console.log('Stop');
-  }
-  setBrand(brand){
-    this.brandeName=brand;//this means object name
+  sleep() {
+    console.log("sleep");
   }
 }
-let Car1=new Toyota();
-let fortuner=new Toyota();
-fortuner.setBrand("fortuner");
-Car1.setBrand('tata')
-
-
-
+class Engineer extends Person{
+  work(){
+    console.log('solve problem,and build something')
+  }
+}
+let anil=new Engineer();
