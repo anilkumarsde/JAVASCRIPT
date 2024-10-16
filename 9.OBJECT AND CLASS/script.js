@@ -60,8 +60,12 @@
 //   }
 // }
 // class Child extends Parent{}
-// let obj=new Child; 
+// let obj=new Child;
 class Person {
+  constructor(){
+    this.brand='Hero';
+    console.log('Enter in parent class')
+  }
   eat() {
     console.log("eat");
   }
@@ -70,8 +74,14 @@ class Person {
   }
 }
 class Engineer extends Person{
+  constructor(branch){
+    console.log("Enter in child class")
+    super();//to invoke parent constructor
+    this.branch=branch;
+    console.log('Exit in child class')
+  }
   work(){
     console.log('solve problem,and build something')
   }
 }
-let anil=new Engineer();
+let anil=new Engineer("computer Science");
