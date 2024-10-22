@@ -24,10 +24,66 @@
 // }
 // calculator(11, 21, sum, subtact);
 
-function getData(dataid){
-    setTimeout(() => {
-        console.log('data',dataid)
+// function getData(dataid,getDAtacallback){
+//     setTimeout(() => {
+//         console.log('data',dataid);
+//         if(getDAtacallback)
+//         {
+//             getDAtacallback();
+//         }
+//     }, 2000);
+// }
+// getData(1,()=>{getData(2)})
+// function fruit(a,nestf){
+//     setTimeout(() => {
+//         console.log(a);
+//         if(nestf){
+//             nestf();
+//         }
 
-    }, 2000);
+//     }, (2000));
+// }
+// fruit("apple",()=>{
+//     fruit("banana")
+// })
+// function getData(dataid, getNextData) {
+//   setTimeout(() => {
+//     console.log(`data:${dataid}`);
+//     if (getNextData) {
+//       getNextData();
+//     }
+//   }, 2000);
+// }
+// getData(1, () => getData(2, () => getData(3)));
+
+
+//Promises
+
+// let promise=new Promise((resolve,reject)=>{
+//     console.log('Hi i am promiss'),
+//     resolve("111")
+// })
+// function getDAta(dataid){
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             console.log("hi")
+//             resolve("sucsess")
+
+//         }, 5000);
+//     })
+// }
+
+function getPromise(){
+    return new Promise((resolve, reject) => {
+        console.log('I do promise');
+        resolve("succes")
+        reject(" network error")
+    })
 }
-getData(100)
+let promise=getPromise();
+promise.then((res)=>{ //if promise fulfiled
+    console.log("fullfiled",res)
+})
+promise.catch((err)=>{ //if promise rejected
+    console.log("rejected",err);
+})
