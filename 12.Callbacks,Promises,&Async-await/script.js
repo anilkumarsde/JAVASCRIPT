@@ -56,7 +56,6 @@
 // }
 // getData(1, () => getData(2, () => getData(3)));
 
-
 //Promises
 
 // let promise=new Promise((resolve,reject)=>{
@@ -73,17 +72,29 @@
 //     })
 // }
 
-function getPromise(){
-    return new Promise((resolve, reject) => {
-        console.log('I do promise');
-        resolve("succes")
-        reject(" network error")
-    })
-}
-let promise=getPromise();
-promise.then((res)=>{ //if promise fulfiled
-    console.log("fullfiled",res)
-})
-promise.catch((err)=>{ //if promise rejected
-    console.log("rejected",err);
-})
+// function getPromise() {
+//   return new Promise((resolve, reject) => {
+//     console.log("I do promise");
+//     resolve("succes");
+//     reject(" network error");
+//   });
+// }
+// let promise = getPromise();
+// promise.then((res) => {
+//   //if promise fulfiled
+//   console.log("fullfiled", res);
+// });
+// promise.catch((err) => {
+//   //if promise rejected
+//   console.log("rejected", err);
+// });
+
+const getData = async () => {
+  let URL = ' ';
+  let response = await fetch(URL);
+
+  let data = await response.json();
+  console.log(data)
+
+};
+getData();
